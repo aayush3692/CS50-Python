@@ -3,7 +3,7 @@ from plates import is_valid
 def test_length():
     assert is_valid("CSC500") == True
     assert is_valid("G") == False
-    assert is_valid("0ELLOWORLD") == False
+    assert is_valid("0ELLORLD") == False
 
 def test_letters():
     assert is_valid("HR4500") == True
