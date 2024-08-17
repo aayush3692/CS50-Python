@@ -3,3 +3,5 @@ word = answer.replace(" ", "...")
 print(word)
 
 
+
+
