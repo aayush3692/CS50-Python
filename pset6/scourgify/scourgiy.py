@@ -22,7 +22,7 @@ def write_csv():
                 for row in reader:
                     last_name, first_name = row["name"].split(',')
                     last = last_name.strip()
-
+  
                     first = first_name.strip()
 
                     writer.writerow({"first":first, "last":last, "house":row['house']})
