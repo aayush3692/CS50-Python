@@ -7,8 +7,8 @@ def main():
 
 def parse(s):
     # Search for the 'src' attribute in the HTML input and extract the URL
-    x = re.search(r'src="([^"]+)"', s)
-    if x:
+    if x := re.search(r'src="([^"]+)"', s):
+    
         url = x.group(1)  # Extract the URL from the 'src' attribute
         
         # Replace "http://" with "https://" to ensure the URL is secure

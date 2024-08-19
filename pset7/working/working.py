@@ -35,7 +35,7 @@ def convert(s):
                     end_hour += 12
                 elif end_time == "AM" and end_hour == 12:
                     end_hour = 0
-                 # Validate the time components to ensure they are within valid ranges
+                # Validate the time components to ensure they are within valid ranges
                 if (
                     not 0 <= start_hour <= 23
                     or not 0 <= start_minute <= 59
