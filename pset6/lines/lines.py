@@ -13,15 +13,21 @@ def count_lines():
         sys.exit("Not a Python file")
     else:
         try:
+            # Open the Python file specified by the user
             with open(sys.argv[1]) as file:
+                
+                # Count and print the number of lines that are not empty or comments
                 print(
                     sum(
-                        1 for line in file if line.strip() and not line.lstrip().startswith('#')
-                        )
+                        1 for line in file 
+                        if line.strip() and not line.lstrip().startswith('#')
                     )
+                )
 
         except FileNotFoundError:
+            # Handle the case where the specified file does not exist
             sys.exit("File does not exist")
+
 
 
 if __name__ == "__main__":
