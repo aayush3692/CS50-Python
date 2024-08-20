@@ -1,5 +1,4 @@
 import re
-import sys
 
 def main():
     # Prompt the user to input an IPv4 address and print whether it's valid
